@@ -281,10 +281,11 @@ class ImageEditorRc extends Component {
         />
         <br />
         <ul >
-          { this.props.rotatable === false ?
+          { this.props.rotatable ?
               <li><button onClick={() => this.rotateToRight()}>Rotate Right</button></li>
               <li><button onClick={() => this.rotateToLeft()}>Rotate Left</button></li>
-            : null}
+            : null
+          }
           
           <li><button onClick={() => this.saveImage()}>Save</button></li>
         </ul>
